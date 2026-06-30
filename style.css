@@ -26,3 +26,10 @@ padding:12px 25px;
 font-size:18px;
 border-radius:10px;
 }
+body{
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
