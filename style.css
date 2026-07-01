@@ -143,3 +143,21 @@ margin:20px auto;
 width:60%;
 border-radius:15px;
 }
+#contact{
+padding:40px;
+text-align:center;
+color:white;
+}
+
+
+#contact h2{
+font-size:35px;
+}
+
+
+footer{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
