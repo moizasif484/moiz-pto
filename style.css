@@ -35,4 +35,22 @@ body{
     background-repeat:no-repeat;
 }
 }
+h1{
+font-size:50px;
+color:white;
+}
 
+p{
+font-size:22px;
+color:white;
+}
+
+button{
+padding:15px 30px;
+margin:10px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
