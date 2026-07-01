@@ -72,3 +72,54 @@ margin:15px;
 text-decoration:none;
 font-size:18px;
 }
+#about, #skills{
+padding:40px;
+text-align:center;
+}
+
+
+#about h2, #skills h2{
+color:white;
+font-size:35px;
+}
+
+
+#about p{
+color:white;
+font-size:20px;
+}
+
+
+.skill{
+width:70%;
+margin:20px auto;
+color:white;
+}
+
+
+.bar{
+background:#333;
+height:20px;
+border-radius:10px;
+}
+
+
+.html{
+width:90%;
+height:100%;
+background:#ff5722;
+}
+
+
+.css{
+width:80%;
+height:100%;
+background:#2196f3;
+}
+
+
+.js{
+width:60%;
+height:100%;
+background:#ffd000;
+}
