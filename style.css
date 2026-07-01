@@ -123,3 +123,23 @@ width:60%;
 height:100%;
 background:#ffd000;
 }
+#projects{
+padding:40px;
+text-align:center;
+}
+
+
+#projects h2{
+color:white;
+font-size:35px;
+}
+
+
+.card{
+background:#222;
+color:white;
+padding:20px;
+margin:20px auto;
+width:60%;
+border-radius:15px;
+}
