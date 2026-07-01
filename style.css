@@ -276,3 +276,41 @@ p{
 }
 
 }
+@media(max-width:600px){
+
+header{
+    padding:10px;
+}
+
+header h2{
+    font-size:20px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    font-size:12px;
+    margin:5px;
+}
+
+
+section{
+    padding:20px 10px;
+}
+
+
+.card{
+    width:85%;
+}
+
+
+body{
+    background-size:auto;
+    background-position:center;
+}
+
+}
