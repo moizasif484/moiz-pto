@@ -52,3 +52,10 @@ function erase(){
 }
 
 type();
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.onclick = function(){
+
+    document.body.classList.toggle("light-mode");
+
+}
