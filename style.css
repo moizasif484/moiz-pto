@@ -410,3 +410,18 @@ html{
     cursor:pointer;
     font-size:18px;
 }
+.light-mode{
+    background:white;
+    color:black;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode p,
+.light-mode a{
+    color:black;
+}
+
+.light-mode header{
+    background:#f5f5f5;
+}
