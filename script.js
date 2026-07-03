@@ -59,3 +59,8 @@ themeBtn.onclick = function(){
     document.body.classList.toggle("light-mode");
 
 }
+window.onload = function(){
+
+    document.getElementById("loader").style.display = "none";
+
+}
