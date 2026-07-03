@@ -375,3 +375,31 @@ z-index:-1;
     background:white;
     color:black;
 }
+html{
+    scroll-behavior:smooth;
+}
+
+.btn, .btn2{
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00bfff;
+}
+
+.btn2:hover{
+    transform:translateY(-5px);
+    background:white;
+    color:black;
+    box-shadow:0 0 20px white;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(0,191,255,0.6);
+}
