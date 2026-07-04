@@ -348,8 +348,8 @@ z-index:-1;
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding-top:90px;
 }
-
 .hero-content h1{
     font-size:55px;
     color:white;
