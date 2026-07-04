@@ -61,8 +61,14 @@ justify-content:space-between;
 align-items:center;
 padding:20px;
 background:#111;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+backdrop-filter: blur(10px);
+background: rgba(0,0,0,0.7);
 }
-
 header h2{
 color:white;
 }
