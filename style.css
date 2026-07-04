@@ -106,29 +106,40 @@ border-radius:10px;
 
 
 .html{
-width:90%;
 height:100%;
 background:#ff5722;
+width:0;
+animation:htmlSkill 2s forwards;
 }
-
 
 .css{
-width:80%;
 height:100%;
 background:#2196f3;
+width:0;
+animation:cssSkill 2s forwards;
 }
-
 
 .js{
-width:60%;
 height:100%;
-background:#ffd000;
-}
-#projects{
-padding:40px;
-text-align:center;
+background:#ffd600;
+width:0;
+animation:jsSkill 2s forwards;
 }
 
+@keyframes htmlSkill{
+from{width:0;}
+to{width:90%;}
+}
+
+@keyframes cssSkill{
+from{width:0;}
+to{width:80%;}
+}
+
+@keyframes jsSkill{
+from{width:0;}
+to{width:65%;}
+}
 
 #projects h2{
 color:white;
