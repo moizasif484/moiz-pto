@@ -83,3 +83,17 @@ window.addEventListener("load", function () {
     }
 
 });
+// Mobile Menu
+
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("nav");
+
+if(menuToggle){
+
+    menuToggle.addEventListener("click", function(){
+
+        nav.classList.toggle("active");
+
+    });
+
+}
