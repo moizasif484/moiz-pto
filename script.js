@@ -1,3 +1,5 @@
+// Typing Animation
+
 const words = [
     "Moiz Developer",
     "Web Developer",
@@ -7,62 +9,77 @@ const words = [
 
 let wordIndex = 0;
 let charIndex = 0;
-let typingElement = document.getElementById("typing");
+
+const typingElement = document.getElementById("typing");
 
 function type() {
 
-    if(charIndex < words[wordIndex].length){
+    if (!typingElement) return;
 
-        typingElement.innerHTML += words[wordIndex].charAt(charIndex);
+    if (charIndex < words[wordIndex].length) {
 
+        typingElement.textContent += words[wordIndex].charAt(charIndex);
         charIndex++;
 
-        setTimeout(type,100);
+        setTimeout(type, 100);
 
-    }else{
+    } else {
 
-        setTimeout(erase,1500);
+        setTimeout(erase, 1500);
 
     }
 
 }
 
-function erase(){
+function erase() {
 
-    if(charIndex > 0){
+    if (charIndex > 0) {
 
-        typingElement.innerHTML = words[wordIndex].substring(0,charIndex-1);
-
+        typingElement.textContent = words[wordIndex].substring(0, charIndex - 1);
         charIndex--;
 
-        setTimeout(erase,50);
+        setTimeout(erase, 50);
 
-    }else{
+    } else {
 
         wordIndex++;
 
-        if(wordIndex >= words.length){
+        if (wordIndex >= words.length) {
             wordIndex = 0;
         }
 
-        setTimeout(type,300);
+        setTimeout(type, 300);
 
     }
 
 }
 
 type();
+
+
+// Dark / Light Mode
+
 const themeBtn = document.getElementById("theme-btn");
 
-themeBtn.onclick = function(){
+if (themeBtn) {
 
-    document.body.classList.toggle("light-mode");
+    themeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("light-mode");
+
+    });
 
 }
+
+
+// Loading Screen
+
 window.addEventListener("load", function () {
+
     const loader = document.getElementById("loader");
+
     if (loader) {
         loader.style.display = "none";
     }
+
 });
-}
