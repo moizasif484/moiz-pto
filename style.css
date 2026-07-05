@@ -552,3 +552,33 @@ color:#888;
 .service-card p{
     color:white;
 }
+form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin:10px 0;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    background:#00bfff;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#0099cc;
+}
