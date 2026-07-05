@@ -518,3 +518,37 @@ margin-top:20px;
 font-size:14px;
 color:#888;
 }
+#services{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.services-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.service-card{
+    width:300px;
+    padding:30px;
+    background:rgba(255,255,255,.08);
+    border-radius:15px;
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+.service-card h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:white;
+}
