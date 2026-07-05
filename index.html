@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moiz Developer</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<script>
-AOS.init({
-duration:1000,
-once:true
-});
-</script>
 <body>
-<header>
 
+<header>
     <h2>Moiz Developer</h2>
 
     <nav>
@@ -25,11 +19,11 @@ once:true
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <button id="theme-btn">🌙</button>
-
 </header>
 
 <!-- Hero Section -->
@@ -38,11 +32,10 @@ once:true
 
     <div class="hero-content">
 
-        <h1>Hi, I'm <span>Moiz Developer</span></h1>
+        <h1>Hi, I'm <span id="typing"></span></h1>
 
         <p>
-            I build modern, fast and responsive websites using
-            HTML, CSS & JavaScript.
+            I build modern, fast and responsive websites using HTML, CSS & JavaScript.
         </p>
 
         <a href="#projects" class="btn">View My Work</a>
@@ -54,7 +47,7 @@ once:true
 
 <!-- About -->
 
-<section id="about">
+<section id="about" data-aos="fade-up">
 
     <h2>About Me</h2>
 
@@ -67,13 +60,12 @@ once:true
 
 <!-- Skills -->
 
-<section id="skills">
+<section id="skills" data-aos="fade-right">
 
     <h2>My Skills</h2>
 
     <div class="skill">
         <p>HTML</p>
-
         <div class="bar">
             <div class="html"></div>
         </div>
@@ -81,7 +73,6 @@ once:true
 
     <div class="skill">
         <p>CSS</p>
-
         <div class="bar">
             <div class="css"></div>
         </div>
@@ -89,7 +80,6 @@ once:true
 
     <div class="skill">
         <p>JavaScript</p>
-
         <div class="bar">
             <div class="js"></div>
         </div>
@@ -99,66 +89,42 @@ once:true
 
 <!-- Projects -->
 
-<section id="projects">
+<section id="projects" data-aos="zoom-in">
 
     <h2>My Projects</h2>
 
     <div class="projects-container">
 
         <div class="card">
-
             <h3>Portfolio Website</h3>
-
-            <p>
-                I designed and developed my personal portfolio website
-                using HTML, CSS and JavaScript.
-            </p>
-
+            <p>I designed and developed my personal portfolio website using HTML, CSS and JavaScript.</p>
             <a href="#" class="project-btn">Live Demo</a>
-
         </div>
 
         <div class="card">
-
             <h3>AI Chat Website</h3>
-
-            <p>
-                An AI-powered chatbot website with a modern responsive design.
-            </p>
-
+            <p>An AI-powered chatbot website with a modern responsive design.</p>
             <a href="#" class="project-btn">Coming Soon</a>
-
         </div>
 
         <div class="card">
-
             <h3>Future Mobile App</h3>
-
-            <p>
-                Android application currently under development.
-            </p>
-
+            <p>Android application currently under development.</p>
             <a href="#" class="project-btn">Coming Soon</a>
-
         </div>
 
         <div class="card">
-
             <h3>AI Project</h3>
-
-            <p>
-                Learning and building AI based web applications.
-            </p>
-
+            <p>Learning and building AI based web applications.</p>
             <a href="#" class="project-btn">Coming Soon</a>
-
         </div>
 
     </div>
 
 </section>
+<!-- Services -->
 
-<section id="services">
+<section id="services" data-aos="fade-left">
 
     <h2>My Services</h2>
 
@@ -181,51 +147,68 @@ once:true
 
     </div>
 
-</section><!-- Contact -->
+</section>
 
-<section id="contact">
+<!-- Contact -->
 
-   <section id="contact">
+<section id="contact" data-aos="fade-up">
 
-<h2>Contact Me</h2>
+    <h2>Contact Me</h2>
 
-<form>
+    <form>
 
-<input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email" required>
+        <input type="email" placeholder="Your Email" required>
 
-<textarea placeholder="Your Message" rows="6" required></textarea>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
 
-<button type="submit">Send Message</button>
+        <button type="submit">Send Message</button>
 
-</form>
+    </form>
 
 </section>
+
 <!-- Footer -->
 
 <footer>
 
-  <footer>
+    <h2>Moiz Developer</h2>
 
-<h2>Moiz Developer</h2>
+    <p>Building Modern Websites with HTML, CSS & JavaScript.</p>
 
-<p>Building Modern Websites with HTML, CSS & JavaScript.</p>
+    <div class="social-links">
 
-<div class="social-links">
+        <a href="#">GitHub</a>
 
-<a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
 
-<a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
 
-<a href="#">YouTube</a>
+        <a href="#">Facebook</a>
 
-<a href="#">Facebook</a>
+    </div>
 
-</div>
-
-<p class="copy">
-© 2026 Moiz Developer. All Rights Reserved.
-</p>
+    <p class="copy">
+        © 2026 Moiz Developer. All Rights Reserved.
+    </p>
 
 </footer>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
