@@ -443,3 +443,29 @@ footer h2{
         display:block;
     }
 }
+/* Back to Top Button */
+
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:999;
+    border:none;
+    outline:none;
+    background:#00bfff;
+    color:white;
+    cursor:pointer;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    width:55px;
+    height:55px;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,191,255,.5);
+}
+
+#topBtn:hover{
+    background:#0099cc;
+    transform:scale(1.1);
+}
