@@ -503,3 +503,28 @@ footer h2{
     margin-top:10px;
     color:white;
 }
+/* WhatsApp Floating Button */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:90px;
+    right:25px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 0 20px rgba(37,211,102,.5);
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
