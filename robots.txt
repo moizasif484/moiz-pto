@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moizasif484.github.io/moiz-pto/sitemap.xml
