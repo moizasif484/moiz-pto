@@ -119,3 +119,85 @@ topBtn.addEventListener("click", function () {
     });
 
 });
+/* ===========================
+   AI CHAT UI
+=========================== */
+
+const chatToggle = document.getElementById("chatToggle");
+const chatContainer = document.getElementById("chatContainer");
+const closeChat = document.getElementById("closeChat");
+const sendBtn = document.getElementById("sendBtn");
+const userInput = document.getElementById("userInput");
+const chatBody = document.getElementById("chatBody");
+
+chatToggle.onclick = () => {
+    chatContainer.style.display = "flex";
+};
+
+closeChat.onclick = () => {
+    chatContainer.style.display = "none";
+};
+
+function addMessage(text, className) {
+
+    const div = document.createElement("div");
+
+    div.className = className;
+
+    div.textContent = text;
+
+    chatBody.appendChild(div);
+
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function fakeReply(question) {
+
+    const q = question.toLowerCase();
+
+    if (q.includes("hello") || q.includes("hi")) {
+        return "👋 Hello! Welcome to Moiz Developer Portfolio.";
+    }
+
+    if (q.includes("name")) {
+        return "My name is Moiz AI Assistant.";
+    }
+
+    if (q.includes("website")) {
+        return "This website was built using HTML, CSS and JavaScript.";
+    }
+
+    if (q.includes("project")) {
+        return "Moiz Developer is building Web and AI Projects.";
+    }
+
+    return "🤖 Gemini AI will be connected in the next step.";
+}
+
+sendBtn.onclick = () => {
+
+    const message = userInput.value.trim();
+
+    if (message === "") return;
+
+    addMessage(message, "user-message");
+
+    userInput.value = "";
+
+    setTimeout(() => {
+
+        addMessage(fakeReply(message), "ai-message");
+
+    }, 600);
+
+};
+
+userInput.addEventListener("keypress", function(e){
+
+    if(e.key === "Enter"){
+
+        sendBtn.click();
+
+    }
+
+});
