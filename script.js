@@ -174,30 +174,43 @@ function fakeReply(question) {
     return "🤖 Gemini AI will be connected in the next step.";
 }
 
-sendBtn.onclick = () => {
+sendBtn.onclick = async () => {
 
     const message = userInput.value.trim();
 
-    if (message === "") return;
+    if (!message) return;
 
     addMessage(message, "user-message");
-
     userInput.value = "";
 
-    setTimeout(() => {
+    addMessage("⏳ Thinking...", "ai-message");
 
-        addMessage(fakeReply(message), "ai-message");
+    try {
 
-    }, 600);
+        const response = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: message
+            })
+        });
 
-};
+        const data = await response.json();
 
-userInput.addEventListener("keypress", function(e){
+        chatBody.removeChild(chatBody.lastChild);
 
-    if(e.key === "Enter"){
+        addMessage(data.reply || "No response received.", "ai-message");
 
-        sendBtn.click();
+    } catch (error) {
+
+        chatBody.removeChild(chatBody.lastChild);
+
+        addMessage("❌ Error connecting to AI.", "ai-message");
+
+        console.error(error);
 
     }
 
-});
+};
